@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>回调函数</title>
+    <script src="jquery-3.2.1.js"></script>
+</head>
+
+<body>
+    <button>点击我</button>
+    <div style="background:#98bf21;height:400px;width:400px;position:absolute;"></div>
+    <script>
+    $(document).ready(function() {
+        $("button").click(function() {
+            $("div").hide("slow", function() {
+                alert("现在被隐藏了");
+            });
+        });
+    });
+    </script>
+</body>
+
+</html>

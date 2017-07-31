@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>选择器</title>
+    <script src="jquery-3.2.1.js"></script>
+</head>
+
+<body>
+    <div>
+        <h1>h1标题</h1>
+        <p>段落1</p>
+        <p>段落2</p>
+        <ul>
+            <li id="spring">春天</li>
+            <li class="season">夏天</li>
+            <li class="season">秋天</li>
+            <li class="season">冬天</li>
+        </ul>
+        <div>
+            <a href="http://www.baidu.com" target="_blank">百度</a>
+            <a href="http://www.taobao.com" target="_self">淘宝</a>
+        </div>
+        <p>段落3</p>
+    </div>
+    <div></div>
+    <script>
+    $(function() {
+        $("p").css("color", "red");
+        $("#spring").css("color", "green");
+        $(".season").css("color", "blue");
+        $("a[target='_blank']").css("color", "yellow");
+        $("a[target!='_blank']").css("color", "#2f3");
+        // $("p").click(function() {
+        //     $(this).hide();
+        // });
+        $("p").dblclick(function() {
+            $(this).hide();
+        });
+    });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax简单例子</title>
+    <script src="jquery-3.2.1.js"></script>
+</head>
+
+<body>
+	<div id="div1"></div>
+	<button>点击</button>
+    <script>
+    $(document).ready(function() {
+        $("button").click(function() {
+           	$("#div1").load("1");
+            
+        });
+    });
+    </script>
+</body>
+
+</html>

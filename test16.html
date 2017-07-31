@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>eq函数</title>
+    <script src="jquery-3.2.1.js"></script>
+</head>
+
+<body>
+	<div>
+		<p class="dog">我是阿呆</p>
+		<p>来自火星</p>
+		<p>天天吃饭睡觉</p>
+		<p>白天打瞌睡</p>
+		<p class="dog">晚上很精神</p>
+	</div>
+    <script>
+    $(document).ready(function() {
+        $("p").eq(1).css("background-color", "yellow");
+        $("p").filter(".dog").css("background-color", "red");
+    });
+    </script>
+</body>
+
+</html>
