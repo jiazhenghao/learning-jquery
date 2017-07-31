@@ -6,14 +6,19 @@
     <title>Ajax简单例子</title>
     <script src="jquery-3.2.1.js"></script>
 </head>
-
+    
 <body>
 	<div id="div1"></div>
-	<button>点击</button>
+	<button id="btn1">点击1</button>
+    <button id="btn2">点击2</button>
+    <div id="div2"></div>
     <script>
     $(document).ready(function() {
-        $("button").click(function() {
-           	$("#div1").load("server/2.txt");
+        $("#btn1").click(function() {
+           	$("#div1").load("2.txt");
+        });
+        $("#btn2").click(function() {
+            $("#div2").load("2.txt #dog");
         });
     });
     </script>
