@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="jquery-3.2.1.js"></script>
+</head>
+
+<body>
+    <h1>123</h1>
+    <p>p1</p>
+    <p>dsdad</p>
+    <p>1231</p>
+    <p>dsdada</p>
+    <p>12312dasda</p>
+    <div>
+        <button>变变变</button>
+    </div>
+    <script>
+    $(function() {
+        $("button").click(function() {
+
+            $("p").html(function(i, origText) {
+                return "我现在是新的了，我开始基数，这是第" + i + " 个段落标签p" + i;
+            });
+        });
+    });
+    </script>
+</body>
+
+</html>

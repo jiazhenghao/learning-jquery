@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="jquery-3.2.1.js"></script>
+	
+</head>
+<body>
+	<div>
+		<p>1-1:p</p>
+		<span>1-2:span</span>
+		<br>
+		<div>
+			<span>1-4-1:span</span>
+			<p>1-4-2:p</p>
+		</div>
+	</div>
+	<p>
+		<span>2-1:div</span>
+	</p>
+	
+	<script>
+		//$("p :first-child").css("background-color", "red");
+		//$("p:first-child").css("background-color", "yellow");
+		$("p span:first-child").css("background-color", "red");
+	</script>
+</body>
+</html>

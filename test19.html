@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="jquery-3.2.1.js"></script>
+	<style>
+		li {
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li>春天</li>
+		<li>夏天</li>
+		<li>秋天</li>
+	</ul>
+	<script>
+		$(function() {
+			$("ul").append("<li>冬天1</li>");
+			$("ul").after("<li>冬天2</li>");
+		});
+	</script>
+</body>
+</html>
