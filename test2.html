@@ -11,8 +11,12 @@
     <div>
         <h1>h1标题</h1>
         <p>段落1</p>
-        <p>段落2</p>
+        <p class="intro">段落2</p>
         <ul>
+            <li href="啊哥帅气">阿哥帅气</li>
+        </ul>
+        <ul>
+            <div class="first-child">蛙哥帅气</div>
             <li id="spring">春天</li>
             <li class="season">夏天</li>
             <li class="season">秋天</li>
@@ -27,17 +31,18 @@
     <div></div>
     <script>
     $(function() {
-        $("p").css("color", "red");
-        $("#spring").css("color", "green");
-        $(".season").css("color", "blue");
-        $("a[target='_blank']").css("color", "yellow");
-        $("a[target!='_blank']").css("color", "#2f3");
-        // $("p").click(function() {
+        //$("ul li:first-of-type").css("color", "red");
+        $("[href='http://www.baidu.com']").css("color", "red");
+        // $("#spring").css("color", "green");
+        // $(".season").css("color", "blue");
+        // $("a[target='_blank']").css("color", "yellow");
+        // $("a[target!='_blank']").css("color", "#2f3");
+        // // $("p").click(function() {
+        // //     $(this).hide();
+        // // });
+        // $("p").dblclick(function() {
         //     $(this).hide();
         // });
-        $("p").dblclick(function() {
-            $(this).hide();
-        });
     });
     </script>
 </body>
